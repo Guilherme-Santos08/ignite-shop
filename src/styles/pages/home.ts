@@ -28,7 +28,8 @@ export const Product = styled('div', {
     bottom: '0.25rem',
     left: '0.25rem',
     right: '0.25rem',
-    padding: '2rem',
+    padding: '1.25rem',
+    cursor: 'default',
 
     borderRadius: 6,
 
@@ -52,6 +53,12 @@ export const Product = styled('div', {
       fontWeight: 'bold',
       color: '$green300',
     },
+
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8,
+    },
   },
 
   '&:hover': {
@@ -60,4 +67,12 @@ export const Product = styled('div', {
       opacity: 1,
     },
   },
+})
+
+export const AddCartItemButton = styled('button', {
+  backgroundColor: '$green500',
+  padding: '0.75rem',
+  borderRadius: 6,
+  border: 'none',
+  cursor: 'pointer',
 })

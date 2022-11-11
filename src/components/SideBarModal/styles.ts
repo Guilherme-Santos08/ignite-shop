@@ -47,7 +47,14 @@ export const DialogTitle = styled(Dialog.Title, {
   fontSize: '$lg',
 })
 
-export const ShoppingCartList = styled('div', {})
+export const ShoppingCartList = styled('div', {
+  '.list-empty': {
+    marginTop: '1.4rem',
+    color: '$gray100',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+})
 
 export const StoreItem = styled('div', {
   display: 'flex',
@@ -149,8 +156,14 @@ export const CheckoutButton = styled('button', {
   borderRadius: 8,
   cursor: 'pointer',
   transition: '.1s background',
-  '&:hover': {
+
+  '&:not(:disabled):hover': {
     backgroundColor: '$green500',
+  },
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+    opacity: 0.6,
   },
 })
 
