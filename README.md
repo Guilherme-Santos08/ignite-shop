@@ -4,7 +4,7 @@
 
 ## 💻 Projeto
 
-descrição aqui
+o Ignite Shop é um E-commerce de camisetas utilizando NextJS(SSR) + Stripe que lida com o método de pagamento
 
 ## ✨ Tecnologia
 
