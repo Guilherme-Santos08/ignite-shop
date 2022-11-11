@@ -19,7 +19,7 @@ export interface ProductProps {
     id: string
     name: string
     imageUrl: string
-    price: string
+    price: number
     priceFormatted: string
     description: string
     defaultPriceId: string
@@ -74,7 +74,7 @@ export default function Product({ product }: ProductProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [{ params: { id: 'prod_MLH5Wy0Y97hDAC' } }],
+    paths: [],
     fallback: 'blocking',
   }
 }
